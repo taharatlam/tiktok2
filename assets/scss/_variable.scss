@@ -1,0 +1,85 @@
+$bg-color-primary: #FE2C55;
+$bg-color-red: #FF0015;
+$bg-blue-color:#25F4EE;
+$text-color: #FE2C55;
+$text-blue-color:#25F4EE;
+$text-light-grey: #CECECE;
+$bg-color-dark-blue: #0096AF;
+$bg-color-pink: #FF2C93;
+$bg-color-purple: #BB12CF;
+
+$mobileMaxWidth: 767px;
+
+
+body{
+    margin: 0px;
+    font-family: "Instrument Sans", sans-serif;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    padding-left: 0px;
+    li{
+        list-style: none;
+    }
+}
+.pb-80{
+    padding-bottom: 80px;
+}
+.bt-80{
+    padding-top: 80px;
+}
+.bg-color{
+    background-color: $bg-color-primary;
+}
+.bg-color-blue{
+    background-color: $bg-blue-color;
+}
+.bg-color-dark-blue{
+    background-color: $bg-color-dark-blue;
+}
+.bg-color-pink{
+    background-color: $bg-color-pink;
+}
+.bg-color-purple{
+    background-color: $bg-color-purple;
+}
+.bg-color-red{
+    background-color: $bg-color-red !important;
+}
+.text-color-primary{
+    color: $text-color;
+}
+.text-blue-color{
+    color: $text-blue-color;
+}
+.btn.btn-theme-tik{
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 14.6px 10px;
+    color: #000;
+    border-radius: 30px;
+    line-height: normal;
+    border-color: #fff;
+    &:hover, &:focus{
+        background-color: #fff;
+        border-color: #fff;
+        color: #000;
+    }
+}
+.btn.btn-download-btn{
+    border-radius: 12px;
+    color: #fff;
+    background-color: $bg-color-red;
+    border-color: $bg-color-red;
+    &:hover, &:focus{
+        background-color: $bg-color-red;
+        border-color: $bg-color-red;
+        color: #fff;
+    }
+}
+.container{
+    max-width: 1270px;
+}

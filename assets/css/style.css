@@ -1,0 +1,238 @@
+.main-nav {
+  padding: 1.7em 0px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(13px);
+          backdrop-filter: blur(13px);
+  z-index: 9999;
+}
+
+.nav-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-inner .l-part {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.nav-inner .l-part .logo {
+  display: inline-block;
+  width: 160px;
+}
+.nav-inner .l-part .logo img {
+  width: 100%;
+}
+.nav-inner .l-part ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 0;
+}
+.nav-inner .l-part ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.lang-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
+.lang-select i {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.lang-select select {
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: white;
+  font-size: 16px;
+}
+
+.menu-btn {
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  display: none;
+}
+.menu-btn i {
+  color: white;
+  font-size: 24px;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  transition: 0.3s ease-in-out;
+  transform: translateX(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.mob-menu.active {
+  transform: translateX(0%);
+  opacity: 1;
+  pointer-events: unset;
+}
+.mob-menu .tp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1em 1em;
+}
+.mob-menu .tp .logo {
+  display: inline-block;
+  width: 120px;
+}
+.mob-menu .tp .logo img {
+  width: 100%;
+}
+.mob-menu .tp button {
+  border: none;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+}
+.mob-menu .tp button i {
+  color: white;
+  font-size: 24px;
+}
+.mob-menu ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.mob-menu ul li:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.mob-menu ul li a {
+  display: block;
+  padding: 1em 1em;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .menu-btn {
+    display: block;
+  }
+  .nav-inner .l-part {
+    gap: 10px;
+  }
+  .nav-inner .l-part .logo {
+    width: 120px;
+  }
+  .nav-inner .l-part ul {
+    display: none;
+  }
+}
+.banner-section {
+  position: relative;
+  overflow: hidden;
+}
+.banner-section .container {
+  position: relative;
+  z-index: 5;
+}
+.banner-section > img {
+  position: absolute;
+  width: 100%;
+}
+.banner-section > img.banner-des1 {
+  top: 0;
+  left: 0;
+  transform: scaleY(-1);
+}
+.banner-section > img.banner-des2 {
+  bottom: 0;
+  left: 0;
+  transform: scaleY(1);
+}
+
+.banner-img img {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  max-width: 460px;
+  pointer-events: none;
+}
+
+.banner-con {
+  position: relative;
+  padding: 3em 0px;
+}
+.banner-con h1 {
+  color: white;
+  font-size: 68px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+.banner-con h1 span {
+  color: #25F4EE;
+}
+
+.case-study-card.style-2 {
+  border: none !important;
+  box-shadow: none !important;
+}
+.case-study-card .study-img-wt {
+  position: relative;
+  padding-top: 120%;
+  margin-bottom: 20px;
+}
+.case-study-card .study-img-wt img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.pdf-preview {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+.vertt-content-bx .image-wgt-contw {
+  height: 250px;
+  border-radius: 18px !important;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.vertt-content-bx .image-wgt-contw img {
+  width: 100%;
+  height: 100%;
+}
+
+.image-wgt-contw iframe {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
