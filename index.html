@@ -37,22 +37,36 @@
                         </a>
                         <ul>
                             <li>
-                                <a href="">Creativity</a>
+                                <a href="#creativity">Creativity</a>
                             </li>
                             <li>
                                 <a href="">Grow with TikTok</a>
                             </li>
                             <li>
-                                <a href="">Agences</a>
+                                <a href="javascript:void(0)">Agencies</a>
                             </li>
-                            <li>
-                                <a href="">Ressources </a>
+                            <li class="has-drop">
+                                <a href="#resources"><span>Resources</span> <img src="assets/images/plus.svg" alt=""></a>
+                                <div class="drop-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#resources" class="tab-link" data-target="#c1">Vertical Content</a>
+                                        </li>
+                                        <li>
+                                            <a href="#resources" class="tab-link" data-target="#c2">SMB Creative</a>
+                                        </li>
+                                        <li>
+                                            <a href="#resources" class="tab-link" data-target="#c3">Case Studies</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                     </div>
                     <div class="r-part">
                         <label for="lang" class="lang-select">
-                            <i class="fa-solid fa-globe"></i>
+                            <!-- <i class="fa-solid fa-globe"></i> -->
+                             <img src="assets/images/globe.svg" alt="">
                             <select name="" id="lang">
                                 <option value="">ENG</option>
                             </select>
@@ -72,16 +86,32 @@
             </div>
             <ul>
                 <li>
-                    <a href="">Creativity</a>
+                    <a href="#creativity">Creativity</a>
                 </li>
                 <li>
-                    <a href="">Grow with TikTok</a>
+                    <a href="javascript:void(0)">Grow with TikTok</a>
                 </li>
                 <li>
-                    <a href="">Agences</a>
+                    <a href="javascript:void(0)">Agencies</a>
                 </li>
-                <li>
-                    <a href="">Ressources </a>
+                <li class="has-drop">
+                    <a href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span>Resources</span>
+                        <img src="assets/images/plus.svg" alt="">
+                    </a>
+                    <div class="drop-menu collapse" id="menu">
+                        <ul>
+                            <li>
+                                <a href="#resources" class="tab-link" data-target="#c1">Vertical Content</a>
+                            </li>
+                            <li>
+                                <a href="#resources" class="tab-link" data-target="#c2">SMB Creative</a>
+                            </li>
+                            <li>
+                                <a href="#resources" class="tab-link" data-target="#c3">Case Studies</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -140,7 +170,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="board-cad-box">
                             <div class="top-content-tikflex mb-3">
-                                <img src="assets/images/cc1.png" alt="">
+                                <!-- <img src="assets/images/cc1.png" alt=""> -->
                                 <h3 class="title-lvl text-color-primary">Start</h3>
                                 <div class="audiance-wgt bg-color text-center">
                                     <h4 class="title-adn text-white">Audience</h4>
@@ -171,7 +201,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="board-cad-box">
                             <div class="top-content-tikflex mb-3">
-                                <img src="assets/images/cc2.png" alt="">
+                                <!-- <img src="assets/images/cc2.png" alt=""> -->
                                 <h3 class="title-lvl text-color-primary">Create</h3>
                                 <div class="audiance-wgt bg-color text-center">
                                     <h4 class="title-adn text-white">Audience</h4>
@@ -200,7 +230,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="board-cad-box">
                             <div class="top-content-tikflex mb-3">
-                                <img src="assets/images/cc3.png" alt="">
+                                <!-- <img src="assets/images/cc3.png" alt=""> -->
                                 <h3 class="title-lvl text-blue-color">Grow</h3>
                                 <div class="audiance-wgt bg-color text-center">
                                     <h4 class="title-adn text-white">Audience</h4>
@@ -501,195 +531,315 @@
                 </div>
             </div>
         </section>
-        <section class="pt-80 pb-80">
+        <section class="sec pt-80 pb-80" id="resources">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="heading-wgt-title text-center pb-5">
-                            <h2 class="title-h2 text-white">Vertical <span class="text-color-primary">Content</span>
-                            </h2>
-                            <div class="elemnt-paragph-1">
-                                <p>This deck has been designed for your clients. The intended use is that your clients
-                                    use this deck to better pitch TikTok and expand their own book of business. It
-                                    provides a high-level overview of TikTok, tackling some of the biggest barriers
-                                    advertisers face when getting started.</p>
-                            </div>
-                        </div>
+                        <ul class="nav nav-pills mb-3 tab-pill-area justify-content-center" id="pills-tab-view"
+                        role="tablist">
+                            <li class="nav-item tabmenu-tik" role="presentation">
+                                <button class="nav-link tablink-btn active" id="md-button-1" data-bs-toggle="pill"
+                                    data-bs-target="#c1" type="button" role="tab"
+                                    aria-controls="buttontab-1" aria-selected="true">
+                                    Vertical Content
+                                </button>
+                            </li>
+                            <li class="nav-item tabmenu-tik" role="presentation">
+                                <button class="nav-link tablink-btn" id="md-button-2" data-bs-toggle="pill"
+                                    data-bs-target="#c2" type="button" role="tab"
+                                    aria-controls="buttontab-2" aria-selected="false">
+                                    SMB Creative
+                                </button>
+                            </li>
+                            <li class="nav-item tabmenu-tik" role="presentation">
+                                <button class="nav-link tablink-btn" id="md-button-2" data-bs-toggle="pill"
+                                    data-bs-target="#c3" type="button" role="tab"
+                                    aria-controls="buttontab-2" aria-selected="false">
+                                    Case Studies
+                                </button>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="vertt-content-bx">
-                            <div class="image-wgt-contw">
-                                <!-- <img src="./assets/images/verticle-img-1.jpg" alt="" /> -->
-                                <iframe
-                                src="assets/images/smb_bootcamp_series_ start.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=FitH"
-                                class="pdf-preview"
-                              ></iframe>
+                    <div class="col-12">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="c1" role="tabpanel"
+                                aria-labelledby="md-button-1">
+                                <section class="pt-80 pb-80">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="heading-wgt-title text-center pb-5">
+                                                    <h2 class="title-h2 text-white">Vertical <span class="text-color-primary">Content</span>
+                                                    </h2>
+                                                    <div class="elemnt-paragph-1">
+                                                        <p>This deck has been designed for your clients. The intended use is that your clients
+                                                            use this deck to better pitch TikTok and expand their own book of business. It
+                                                            provides a high-level overview of TikTok, tackling some of the biggest barriers
+                                                            advertisers face when getting started.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-3">
+                                                <div class="vertt-content-bx">
+                                                    <div class="image-wgt-contw">
+                                                        <!-- <img src="./assets/images/verticle-img-1.jpg" alt="" /> -->
+                                                        <iframe
+                                                        src="assets/images/smb_bootcamp_series_ start.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=FitH"
+                                                        class="pdf-preview"
+                                                      ></iframe>
+                                                    </div>
+                                                    <h3 class="heading-tick-wgt">TikTok SMB Beauty Master Narative</h3>
+                                                    <div class="download-element">
+                                                        <a href="./assets/pdf/TikTok_SMB_Beauty Master.pdf" target="_blank"
+                                                            class="btn btn-theme-tik py-2 w-100">
+                                                            <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
+                                                                    alt="icon" /></span>
+                                                            Preview Presentation
+                                                            <img src="./assets/images/crose-arrow.svg" alt="icon" class="ms-3" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-3">
+                                                <div class="vertt-content-bx">
+                                                    <div class="image-wgt-contw">
+                                                        <!-- <img src="./assets/images/verticle-img-2.jpg" alt="" /> -->
+                                                        <iframe
+                                                        src="assets/images/smb_bootcamp_series_ start.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=FitH"
+                                                        class="pdf-preview"
+                                                      ></iframe>
+                                                    </div>
+                                                    <h3 class="heading-tick-wgt">TikTok SMB Beauty Master Narative</h3>
+                                                    <div class="download-element">
+                                                        <a href="./assets/pdf/Finserve-Mini Guide.pdf" target="_blank"
+                                                            class="btn btn-theme-tik py-2 w-100">
+                                                            <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
+                                                                    alt="icon" /></span>
+                                                            Preview Presentation
+                                                            <img src="./assets/images/crose-arrow.svg" alt="icon" class="ms-3" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-3">
+                                                <div class="vertt-content-bx">
+                                                    <div class="image-wgt-contw">
+                                                        <!-- <img src="./assets/images/verticle-img-3.jpg" alt="" /> -->
+                                                        <iframe
+                                                        src="assets/images/smb_bootcamp_series_ start.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=FitH"
+                                                        class="pdf-preview"
+                                                      ></iframe>
+                                                    </div>
+                                                    <h3 class="heading-tick-wgt">TikTok SMB Beauty Master Narative</h3>
+                                                    <div class="download-element">
+                                                        <a href="./assets/pdf/Professional-Services.pdf" target="_blank"
+                                                            class="btn btn-theme-tik py-2 w-100">
+                                                            <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
+                                                                    alt="icon" /></span>
+                                                            Preview Presentation
+                                                            <img src="./assets/images/crose-arrow.svg" alt="icon" class="ms-3" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-3">
+                                                <div class="vertt-content-bx">
+                                                    <div class="image-wgt-contw">
+                                                        <!-- <img src="./assets/images/verticle-img-4.jpg" alt="" /> -->
+                                                        <iframe
+                                                        src="assets/images/smb_bootcamp_series_ start.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=FitH"
+                                                        class="pdf-preview"
+                                                      ></iframe>
+                                                    </div>
+                                                    <h3 class="heading-tick-wgt">TikTok SMB Beauty Master Narative</h3>
+                                                    <div class="download-element">
+                                                        <a href="./assets/pdf/Education-Playbook.pdf" target="_blank"
+                                                            class="btn btn-theme-tik py-2 w-100">
+                                                            <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
+                                                                    alt="icon" /></span>
+                                                            Preview Presentation
+                                                            <img src="./assets/images/crose-arrow.svg" alt="icon" class="ms-3" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-3">
+                                                <div class="vertt-content-bx">
+                                                    <div class="image-wgt-contw">
+                                                        <!-- <img src="./assets/images/verticle-img-5.jpg" alt="" /> -->
+                                                        <iframe
+                                                        src="assets/images/smb_bootcamp_series_ start.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=FitH"
+                                                        class="pdf-preview"
+                                                      ></iframe>
+                                                    </div>
+                                                    <h3 class="heading-tick-wgt">TikTok SMB Beauty Master Narative</h3>
+                                                    <div class="download-element">
+                                                        <a href="./assets/pdf/Food-&-Beverages.pdf" target="_blank"
+                                                            class="btn btn-theme-tik py-2 w-100">
+                                                            <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
+                                                                    alt="icon" /></span>
+                                                            Preview Presentation
+                                                            <img src="./assets/images/crose-arrow.svg" alt="icon" class="ms-3" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-3">
+                                                <div class="vertt-content-bx">
+                                                    <div class="image-wgt-contw">
+                                                        <!-- <img src="./assets/images/verticle-img-6.jpg" alt="" /> -->
+                                                        <iframe
+                                                        src="assets/images/smb_bootcamp_series_ start.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=FitH"
+                                                        class="pdf-preview"
+                                                      ></iframe>
+                                                    </div>
+                                                    <h3 class="heading-tick-wgt">TikTok SMB Beauty Master Narative</h3>
+                                                    <div class="download-element">
+                                                        <a href="./assets/pdf/TikTok SMB_Fashion-&-Retail.pdf" target="_blank"
+                                                            class="btn btn-theme-tik py-2 w-100">
+                                                            <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
+                                                                    alt="icon" /></span>
+                                                            Preview Presentation
+                                                            <img src="./assets/images/crose-arrow.svg" alt="icon" class="ms-3" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-3">
+                                                <div class="vertt-content-bx">
+                                                    <div class="image-wgt-contw">
+                                                        <!-- <img src="./assets/images/verticle-img-7.jpg" alt="" /> -->
+                                                        <iframe
+                                                        src="assets/images/smb_bootcamp_series_ start.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=FitH"
+                                                        class="pdf-preview"
+                                                      ></iframe>
+                                                    </div>
+                                                    <h3 class="heading-tick-wgt">TikTok SMB Beauty Master Narative</h3>
+                                                    <div class="download-element">
+                                                        <a href="./assets/pdf/TikTok_CPG_Playbook_2024.pdf" target="_blank"
+                                                            class="btn btn-theme-tik py-2 w-100">
+                                                            <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
+                                                                    alt="icon" /></span>
+                                                            Preview Presentation
+                                                            <img src="./assets/images/crose-arrow.svg" alt="icon" class="ms-3" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-3">
+                                                <div class="vertt-content-bx">
+                                                    <div class="image-wgt-contw">
+                                                        <!-- <img src="./assets/images/verticle-img-8.jpg" alt="" /> -->
+                                                        <iframe
+                                                        src="assets/images/smb_bootcamp_series_ start.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=FitH"
+                                                        class="pdf-preview"
+                                                      ></iframe>
+                                                    </div>
+                                                    <h3 class="heading-tick-wgt">TikTok SMB Beauty Master Narative</h3>
+                                                    <div class="download-element">
+                                                        <a href="./assets/pdf/TikTok-Tactics_Lead+Generation.pdf" target="_blank"
+                                                            class="btn btn-theme-tik py-2 w-100">
+                                                            <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
+                                                                    alt="icon" /></span>
+                                                            Preview Presentation
+                                                            <img src="./assets/images/crose-arrow.svg" alt="icon" class="ms-3" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
-                            <h3 class="heading-tick-wgt">TikTok SMB Beauty Master Narative</h3>
-                            <div class="download-element">
-                                <a href="./assets/pdf/TikTok_SMB_Beauty Master.pdf" target="_blank"
-                                    class="btn btn-theme-tik py-2 w-100">
-                                    <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
-                                            alt="icon" /></span>
-                                    Preview Presentation
-                                    <img src="./assets/images/crose-arrow.svg" alt="icon" class="ms-3" />
-                                </a>
+                            <div class="tab-pane fade" id="c2" role="tabpanel"
+                                aria-labelledby="md-button-1">
+                                <div class="smb-create-wt">
+                                    <div class="tik-imgfl text-center mb-5"><img src="./assets/images/tik-2024.jpg"
+                                            class="border-0" alt="" />
+                                    </div>
+                                    <div class="download-element text-center">
+                                        <a href="./assets/pdf/SMB 2024 Marketing Calendar_EN.pdf" target="_blank"
+                                            class="btn btn-theme-tik py-2">
+                                            <span class="icon-pdf icon-pdf-36 me-2"><img
+                                                    src="./assets/images/pdf-icon.svg" alt="icon" /></span>
+                                            Preview Presentation
+                                            <img src="./assets/images/crose-arrow.svg" alt="icon" class="mx-3" />
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="vertt-content-bx">
-                            <div class="image-wgt-contw">
-                                <!-- <img src="./assets/images/verticle-img-2.jpg" alt="" /> -->
-                                <iframe
-                                src="assets/images/smb_bootcamp_series_ start.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=FitH"
-                                class="pdf-preview"
-                              ></iframe>
-                            </div>
-                            <h3 class="heading-tick-wgt">TikTok SMB Beauty Master Narative</h3>
-                            <div class="download-element">
-                                <a href="./assets/pdf/Finserve-Mini Guide.pdf" target="_blank"
-                                    class="btn btn-theme-tik py-2 w-100">
-                                    <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
-                                            alt="icon" /></span>
-                                    Preview Presentation
-                                    <img src="./assets/images/crose-arrow.svg" alt="icon" class="ms-3" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="vertt-content-bx">
-                            <div class="image-wgt-contw">
-                                <!-- <img src="./assets/images/verticle-img-3.jpg" alt="" /> -->
-                                <iframe
-                                src="assets/images/smb_bootcamp_series_ start.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=FitH"
-                                class="pdf-preview"
-                              ></iframe>
-                            </div>
-                            <h3 class="heading-tick-wgt">TikTok SMB Beauty Master Narative</h3>
-                            <div class="download-element">
-                                <a href="./assets/pdf/Professional-Services.pdf" target="_blank"
-                                    class="btn btn-theme-tik py-2 w-100">
-                                    <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
-                                            alt="icon" /></span>
-                                    Preview Presentation
-                                    <img src="./assets/images/crose-arrow.svg" alt="icon" class="ms-3" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="vertt-content-bx">
-                            <div class="image-wgt-contw">
-                                <!-- <img src="./assets/images/verticle-img-4.jpg" alt="" /> -->
-                                <iframe
-                                src="assets/images/smb_bootcamp_series_ start.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=FitH"
-                                class="pdf-preview"
-                              ></iframe>
-                            </div>
-                            <h3 class="heading-tick-wgt">TikTok SMB Beauty Master Narative</h3>
-                            <div class="download-element">
-                                <a href="./assets/pdf/Education-Playbook.pdf" target="_blank"
-                                    class="btn btn-theme-tik py-2 w-100">
-                                    <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
-                                            alt="icon" /></span>
-                                    Preview Presentation
-                                    <img src="./assets/images/crose-arrow.svg" alt="icon" class="ms-3" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="vertt-content-bx">
-                            <div class="image-wgt-contw">
-                                <!-- <img src="./assets/images/verticle-img-5.jpg" alt="" /> -->
-                                <iframe
-                                src="assets/images/smb_bootcamp_series_ start.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=FitH"
-                                class="pdf-preview"
-                              ></iframe>
-                            </div>
-                            <h3 class="heading-tick-wgt">TikTok SMB Beauty Master Narative</h3>
-                            <div class="download-element">
-                                <a href="./assets/pdf/Food-&-Beverages.pdf" target="_blank"
-                                    class="btn btn-theme-tik py-2 w-100">
-                                    <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
-                                            alt="icon" /></span>
-                                    Preview Presentation
-                                    <img src="./assets/images/crose-arrow.svg" alt="icon" class="ms-3" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="vertt-content-bx">
-                            <div class="image-wgt-contw">
-                                <!-- <img src="./assets/images/verticle-img-6.jpg" alt="" /> -->
-                                <iframe
-                                src="assets/images/smb_bootcamp_series_ start.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=FitH"
-                                class="pdf-preview"
-                              ></iframe>
-                            </div>
-                            <h3 class="heading-tick-wgt">TikTok SMB Beauty Master Narative</h3>
-                            <div class="download-element">
-                                <a href="./assets/pdf/TikTok SMB_Fashion-&-Retail.pdf" target="_blank"
-                                    class="btn btn-theme-tik py-2 w-100">
-                                    <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
-                                            alt="icon" /></span>
-                                    Preview Presentation
-                                    <img src="./assets/images/crose-arrow.svg" alt="icon" class="ms-3" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="vertt-content-bx">
-                            <div class="image-wgt-contw">
-                                <!-- <img src="./assets/images/verticle-img-7.jpg" alt="" /> -->
-                                <iframe
-                                src="assets/images/smb_bootcamp_series_ start.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=FitH"
-                                class="pdf-preview"
-                              ></iframe>
-                            </div>
-                            <h3 class="heading-tick-wgt">TikTok SMB Beauty Master Narative</h3>
-                            <div class="download-element">
-                                <a href="./assets/pdf/TikTok_CPG_Playbook_2024.pdf" target="_blank"
-                                    class="btn btn-theme-tik py-2 w-100">
-                                    <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
-                                            alt="icon" /></span>
-                                    Preview Presentation
-                                    <img src="./assets/images/crose-arrow.svg" alt="icon" class="ms-3" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="vertt-content-bx">
-                            <div class="image-wgt-contw">
-                                <!-- <img src="./assets/images/verticle-img-8.jpg" alt="" /> -->
-                                <iframe
-                                src="assets/images/smb_bootcamp_series_ start.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=FitH"
-                                class="pdf-preview"
-                              ></iframe>
-                            </div>
-                            <h3 class="heading-tick-wgt">TikTok SMB Beauty Master Narative</h3>
-                            <div class="download-element">
-                                <a href="./assets/pdf/TikTok-Tactics_Lead+Generation.pdf" target="_blank"
-                                    class="btn btn-theme-tik py-2 w-100">
-                                    <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
-                                            alt="icon" /></span>
-                                    Preview Presentation
-                                    <img src="./assets/images/crose-arrow.svg" alt="icon" class="ms-3" />
-                                </a>
+                            <div class="tab-pane fade" id="c3" role="tabpanel"
+                                aria-labelledby="md-button-1">
+                                <section class="pt-80 pb-80">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="heading-wgt-title text-center pb-5">
+                                                    <h2 class="title-h2 text-white">Case <span class="text-blue-color">Studies</span>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-4 col-md-4 col-12">
+                                                <div class="case-study-card style-2">
+                                                    <div class="study-img-wt">
+                                                        <img src="./assets/images/case-study-img-1.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h3 class="heading-case-wgt">Case Studies: Success Stories and Inspirational Brand Results
+                                                        </h3>
+                                                        <div class="read-more-link">
+                                                            <a href="https://bytedance.sg.larkoffice.com/docx/RhW1dCnUboDh1Ex94XAlGriBgJe" target="_blank" class="btn btn-link-mt">
+                                                                READ MORE
+                                                                <img src="./assets/images/circle-cross-icon-right.svg" alt="icon" class="ms-3">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="col-12 col-md-6 col-lg-4">
+                                                <div class="case-study-card">
+                                                    <div class="study-img-wt">
+                                                        <img src="./assets/images/case-study-img-1.jpg" alt="">
+                                                    </div>
+                                                    <h3 class="heading-case-wgt">Case Studies: Success Stories and Inspirational Brand Results
+                                                    </h3>
+                                                    <div class="read-more-link">
+                                                        <a href="#" class="btn btn-link-mt">
+                                                            READ MORE
+                                                            <img src="./assets/images/circle-cross-icon-right.svg" alt="icon" class="ms-3">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                <div class="case-study-card">
+                                                    <div class="study-img-wt">
+                                                        <img src="./assets/images/case-study-img-1.jpg" alt="">
+                                                    </div>
+                                                    <h3 class="heading-case-wgt">Case Studies: Success Stories and Inspirational Brand Results
+                                                    </h3>
+                                                    <div class="read-more-link">
+                                                        <a href="#" class="btn btn-link-mt">
+                                                            READ MORE
+                                                            <img src="./assets/images/circle-cross-icon-right.svg" alt="icon" class="ms-3">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="pt-80 pb-80">
+        <section class="pt-80 pb-80 d-none">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -709,25 +859,25 @@
                 </div>
             </div>
         </section>
-        <section class="pt-80 pb-80">
+        <section class="pt-80 pb-80 d-none">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="d-flex justify-content-center mb-5">
-                            <ul class="nav nav-pills mb-3 tab-pill-area justify-content-center" id="pills-tab-view"
-                                role="tablist">
-                                <li class="nav-item tabmenu-tik" role="presentation">
-                                    <button class="nav-link tablink-btn active" id="md-button-1" data-bs-toggle="pill"
-                                        data-bs-target="#buttontab-1" type="button" role="tab"
-                                        aria-controls="buttontab-1" aria-selected="true">202 Content Calendars</button>
-                                </li>
-                                <li class="nav-item tabmenu-tik" role="presentation">
-                                    <button class="nav-link tablink-btn" id="md-button-2" data-bs-toggle="pill"
-                                        data-bs-target="#buttontab-2" type="button" role="tab"
-                                        aria-controls="buttontab-2" aria-selected="false">202 Content Calendars Seasonal
-                                        Decks</button>
-                                </li>
-                            </ul>
+                                <ul class="nav nav-pills mb-3 tab-pill-area justify-content-center" id="pills-tab-view"
+                                    role="tablist">
+                                    <li class="nav-item tabmenu-tik" role="presentation">
+                                        <button class="nav-link tablink-btn active" id="md-button-1" data-bs-toggle="pill"
+                                            data-bs-target="#buttontab-1" type="button" role="tab"
+                                            aria-controls="buttontab-1" aria-selected="true">202 Content Calendars</button>
+                                    </li>
+                                    <li class="nav-item tabmenu-tik" role="presentation">
+                                        <button class="nav-link tablink-btn" id="md-button-2" data-bs-toggle="pill"
+                                            data-bs-target="#buttontab-2" type="button" role="tab"
+                                            aria-controls="buttontab-2" aria-selected="false">202 Content Calendars Seasonal
+                                            Decks</button>
+                                    </li>
+                                </ul>
                         </div>
 
                         <div class="tab-content" id="pills-tabContent">
@@ -758,167 +908,241 @@
                 </div>
             </div>
         </section>
-        <section class="pt-80 pb-80">
+        <section class="pt-80 pb-80" id="creativity">
             <div class="container px-lg-5">
                 <div class="row">
                     <div class="col-12">
-                        <div class="heading-wgt-title text-center pb-5">
-                            <h2 class="title-h2 text-white mb-4">Creative Talks <span
-                                    class="text-color-primary">Decks</span></h2>
-                            <h3 class="block-heading"><span class="rounded-5">1:- Ideation: Where creativity begins
-                                    (07/11)</span></h3>
-                        </div>
+                        <h2 class="title-h2 text-white mb-4 text-center">Creative Talks <span
+                            class="text-color-primary">Decks</span></h2>
+                        <ul class="nav nav-pills mb-3 tab-pill-area justify-content-center" id="pills-tab-view"
+                        role="tablist">
+                            <li class="nav-item tabmenu-tik" role="presentation">
+                                <button class="nav-link tablink-btn active" id="md-button-1" data-bs-toggle="pill"
+                                    data-bs-target="#s1" type="button" role="tab"
+                                    aria-controls="buttontab-1" aria-selected="true">
+                                    Ideation
+                                </button>
+                            </li>
+                            <li class="nav-item tabmenu-tik" role="presentation">
+                                <button class="nav-link tablink-btn" id="md-button-2" data-bs-toggle="pill"
+                                    data-bs-target="#s2" type="button" role="tab"
+                                    aria-controls="buttontab-2" aria-selected="false">
+                                    Production
+                                </button>
+                            </li>
+                            <li class="nav-item tabmenu-tik" role="presentation">
+                                <button class="nav-link tablink-btn" id="md-button-2" data-bs-toggle="pill"
+                                    data-bs-target="#s3" type="button" role="tab"
+                                    aria-controls="buttontab-2" aria-selected="false">
+                                    Optimization & Evaluation 
+                                </button>
+                            </li>
+                            <li class="nav-item tabmenu-tik" role="presentation">
+                                <button class="nav-link tablink-btn" id="md-button-2" data-bs-toggle="pill"
+                                    data-bs-target="#s4" type="button" role="tab"
+                                    aria-controls="buttontab-2" aria-selected="false">
+                                    Creative talks
+                                </button>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-8">
-                        <div class="deck-content">
-                            <h3 class="title-mt3">Presentation</h3>
-                            <div class="tik-imgfl text-center mb-5"><img src="./assets/images/answer-img.jpg" alt="" />
-                            </div>
-                            <div class="download-element text-center">
-                                <a href="./assets/pdf/Creative Talks 1 - Ideation - VS 2023.pdf" target="_blank"
-                                    class="btn btn-theme-tik py-2">
-                                    <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
-                                            alt="icon" /></span>
-                                    Preview Presentation
-                                    <img src="./assets/images/crose-arrow.svg" alt="icon" class="mx-3" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <div class="deck-content mt-5 mt-md-0">
-                            <h3 class="title-mt3">Video</h3>
-                            <div class="tik-imgfl text-center mb-5">
-                                <video class="video-web-tik" controls>
-                                    <source src="./assets/videos/ideation-video.mov" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
                     <div class="col-12">
-                        <div class="element-tp-cover">
-                            <h3 class="title-tp">Topics Covered</h3>
-                            <div class="multi-create-btn text-center">
-                                <span class="bg-color-dark-blue btn-calend">Creative Center</span>
-                                <span class="bg-color btn-calend mx-4">Creative Assistant<img
-                                        src="./assets/images/down-long-arrow.svg" alt="" /></span>
-                                <span class="bg-color-dark-blue btn-calend">Creative Structure</span>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="s1" role="tabpanel"
+                                aria-labelledby="md-button-1">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="heading-wgt-title text-center pb-5">
+                                            
+                                            <h3 class="block-heading"><span class="rounded-5">
+                                                1:- Ideation: Where creativity begins (07/11)</span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    
+                                    <div class="col-12 col-md-8">
+                                        <div class="deck-content">
+                                            <h3 class="title-mt3">Presentation</h3>
+                                            <div class="tik-imgfl text-center mb-5"><img src="./assets/images/answer-img.jpg" alt="" />
+                                            </div>
+                                            <div class="download-element text-center">
+                                                <a href="./assets/pdf/Creative Talks 1 - Ideation - VS 2023.pdf" target="_blank"
+                                                    class="btn btn-theme-tik py-2">
+                                                    <span class="icon-pdf icon-pdf-36 me-2"><img src="./assets/images/pdf-icon.svg"
+                                                            alt="icon" /></span>
+                                                    Preview Presentation
+                                                    <img src="./assets/images/crose-arrow.svg" alt="icon" class="mx-3" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="deck-content mt-5 mt-md-0">
+                                            <h3 class="title-mt3">Video</h3>
+                                            <div class="tik-imgfl text-center mb-5">
+                                                <video class="video-web-tik" controls>
+                                                    <source src="./assets/videos/ideation-video.mov" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="element-tp-cover">
+                                            <h3 class="title-tp">Topics Covered</h3>
+                                            <div class="multi-create-btn text-center">
+                                                <span class="bg-color-dark-blue btn-calend">Creative Center</span>
+                                                <span class="bg-color btn-calend mx-4">Creative Assistant<img
+                                                        src="./assets/images/down-long-arrow.svg" alt="" /></span>
+                                                <span class="bg-color-dark-blue btn-calend">Creative Structure</span>
+                                            </div>
+                                            <div class="evalt-img text-center mt-5 d-none">
+                                                <img src="./assets/images/evaluate-img.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="evalt-img text-center mt-5">
-                                <img src="./assets/images/evaluate-img.jpg" alt="" />
+                            <div class="tab-pane fade" id="s2" role="tabpanel"
+                                aria-labelledby="md-button-1">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="heading-wgt-title text-center pb-5">
+                                            <h3 class="block-heading"><span>2:- Production: Where Creative Vision Comes to Life
+                                                    (09/11)</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-8">
+                                        <div class="deck-content">
+                                            <h3 class="title-mt3">Presentation</h3>
+                                            <div class="tik-imgfl text-center mb-5"><img src="./assets/images/production-img.jpg"
+                                                    alt="" />
+                                            </div>
+                                            <div class="download-element text-center">
+                                                <a href="./assets/pdf/Creative Talks 2 - Production - VS 2023.pdf" target="_blank"
+                                                    class="btn btn-theme-tik btn-download-btn py-2 text-white">
+                                                    Preview Presentation
+                                                    <img src="./assets/images/pdf-icon-big.svg" alt="icon" class="mx-3" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="deck-content">
+                                            <h3 class="title-mt3">Video</h3>
+                                            <div class="tik-imgfl text-center mb-5">
+                                                <video class="video-web-tik" controls>
+                                                    <source src="./assets/videos/ideation-video.mov" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="element-tp-cover">
+                                            <h3 class="title-tp text"><span class="text-color-primary">Topics Covered</span></h3>
+                                            <div class="multi-create-btn text-center">
+                                                <span class="bg-color btn-calend mx-2">Creative Tool</span>
+                                                <span class="bg-color btn-calend mx-2">Cap Cut</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="s3" role="tabpanel"
+                                aria-labelledby="md-button-1">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="heading-wgt-title text-center pb-5">
+                                            <h3 class="block-heading"><span>3:- Optimization & Evaluation (14/11)</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-8">
+                                        <div class="deck-content">
+                                            <h3 class="title-mt3">Presentation</h3>
+                                            <div class="tik-imgfl text-center mb-5"><img src="./assets/images/answer-img.jpg" alt="" />
+                                            </div>
+                                            <div class="download-element text-center">
+                                                <a href="./assets/pdf/Optimisation & Evaluation.pdf" target="_blank"
+                                                    class="btn btn-theme-tik btn-download-btn py-2 text-white">
+                                                    Preview Presentation
+                                                    <img src="./assets/images/pdf-icon-big.svg" alt="icon" class="mx-3" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <div class="deck-content mt-5 mt-md-0">
+                                            <h3 class="title-mt3">Video</h3>
+                                            <div class="tik-imgfl text-center mb-5">
+                                                <video class="video-web-tik" controls>
+                                                    <source src="./assets/videos/ideation-video.mov" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="element-tp-cover">
+                                            <h3 class="title-tp text text-white">Topics <span class="text-color-primary">Covered</span>
+                                            </h3>
+                                            <div class="multi-create-btn text-center">
+                                                <span class="bg-btn-1 btn-calend mx-2">Smart Fix</span>
+                                                <span class="bg-btn-2 btn-calend mx-2">Video Insights</span>
+                                                <span class="bg-btn-3 btn-calend mx-2">Smart Creative</span>
+                                                <span class="bg-btn-4 btn-calend mx-2">Creative Fatigue Diagnosis</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="s4" role="tabpanel"
+                                aria-labelledby="md-button-1">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="heading-wgt-title text-center pb-5">
+                                            <h3 class="block-heading mb-4"><span>Creative talks: Objection Handling One pager</span>
+                                            </h3>
+                                            <p class="text-white">Learn how to win the pitch when the client has objections related to
+                                                creativity:</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="deck-content">
+                                            <div class="tik-imgfl text-center mb-5"><img src="./assets/images/business-short.jpg"
+                                                    class="rounded-0" alt="">
+                                            </div>
+                                            <div class="download-element text-center">
+                                                <a href="./assets/pdf/Creative Talks_ Objection Handling.pdf" target="_blank"
+                                                    class="btn btn-theme-tik btn-download-btn py-2 text-white">
+                                                    Preview Presentation
+                                                    <img src="./assets/images/pdf-icon-big.svg" alt="icon" class="mx-3">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </section>
 
 
-        <section class="pt-80 pb-80">
-            <div class="container px-lg-5">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="heading-wgt-title text-center pb-5">
-                            <h3 class="block-heading"><span>2:- Production: Where Creative Vision Comes to Life
-                                    (09/11)</span></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-8">
-                        <div class="deck-content">
-                            <h3 class="title-mt3">Presentation</h3>
-                            <div class="tik-imgfl text-center mb-5"><img src="./assets/images/production-img.jpg"
-                                    alt="" />
-                            </div>
-                            <div class="download-element text-center">
-                                <a href="./assets/pdf/Creative Talks 2 - Production - VS 2023.pdf" target="_blank"
-                                    class="btn btn-theme-tik btn-download-btn py-2 text-white">
-                                    Preview Presentation
-                                    <img src="./assets/images/pdf-icon-big.svg" alt="icon" class="mx-3" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <div class="deck-content">
-                            <h3 class="title-mt3">Video</h3>
-                            <div class="tik-imgfl text-center mb-5">
-                                <video class="video-web-tik" controls>
-                                    <source src="./assets/videos/ideation-video.mov" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="element-tp-cover">
-                            <h3 class="title-tp text"><span class="text-color-primary">Topics Covered</span></h3>
-                            <div class="multi-create-btn text-center">
-                                <span class="bg-color btn-calend mx-2">Creative Tool</span>
-                                <span class="bg-color btn-calend mx-2">Cap Cut</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="pt-80 pb-80">
-            <div class="container px-lg-5">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="heading-wgt-title text-center pb-5">
-                            <h3 class="block-heading"><span>3:- Optimization & Evaluation (14/11)</span></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-8">
-                        <div class="deck-content">
-                            <h3 class="title-mt3">Presentation</h3>
-                            <div class="tik-imgfl text-center mb-5"><img src="./assets/images/answer-img.jpg" alt="" />
-                            </div>
-                            <div class="download-element text-center">
-                                <a href="./assets/pdf/Optimisation & Evaluation.pdf" target="_blank"
-                                    class="btn btn-theme-tik btn-download-btn py-2 text-white">
-                                    Preview Presentation
-                                    <img src="./assets/images/pdf-icon-big.svg" alt="icon" class="mx-3" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <div class="deck-content mt-5 mt-md-0">
-                            <h3 class="title-mt3">Video</h3>
-                            <div class="tik-imgfl text-center mb-5">
-                                <video class="video-web-tik" controls>
-                                    <source src="./assets/videos/ideation-video.mov" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="element-tp-cover">
-                            <h3 class="title-tp text text-white">Topics <span class="text-color-primary">Covered</span>
-                            </h3>
-                            <div class="multi-create-btn text-center">
-                                <span class="bg-btn-1 btn-calend mx-2">Smart Fix</span>
-                                <span class="bg-btn-2 btn-calend mx-2">Video Insights</span>
-                                <span class="bg-btn-3 btn-calend mx-2">Smart Creative</span>
-                                <span class="bg-btn-4 btn-calend mx-2">Creative Fatigue Diagnosis</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <section class="pt-80 pb-80 d-none">
             <div class="container">
                 <div class="row">
@@ -944,115 +1168,25 @@
                 </div>
             </div>
         </section>
-        <section class="pt-80 pb-80">
-            <div class="container px-lg-5">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="heading-wgt-title text-center pb-5">
-                            <h3 class="block-heading mb-4"><span>Creative talks: Objection Handling One pager</span>
-                            </h3>
-                            <p class="text-white">Learn how to win the pitch when the client has objections related to
-                                creativity:</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="deck-content">
-                            <div class="tik-imgfl text-center mb-5"><img src="./assets/images/business-short.jpg"
-                                    class="rounded-0" alt="">
-                            </div>
-                            <div class="download-element text-center">
-                                <a href="./assets/pdf/Creative Talks_ Objection Handling.pdf" target="_blank"
-                                    class="btn btn-theme-tik btn-download-btn py-2 text-white">
-                                    Preview Presentation
-                                    <img src="./assets/images/pdf-icon-big.svg" alt="icon" class="mx-3">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="pt-80 pb-80">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="heading-wgt-title text-center pb-5">
-                            <h2 class="title-h2 text-white">Case <span class="text-blue-color">Studies</span>
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="case-study-card style-2">
-                            <div class="study-img-wt">
-                                <img src="./assets/images/case-study-img-1.jpg" alt="">
-                            </div>
-                            <div>
-                                <h3 class="heading-case-wgt">Case Studies: Success Stories and Inspirational Brand Results
-                                </h3>
-                                <div class="read-more-link">
-                                    <a href="https://bytedance.sg.larkoffice.com/docx/RhW1dCnUboDh1Ex94XAlGriBgJe" target="_blank" class="btn btn-link-mt">
-                                        READ MORE
-                                        <img src="./assets/images/circle-cross-icon-right.svg" alt="icon" class="ms-3">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-12 col-md-6 col-lg-4">
-                        <div class="case-study-card">
-                            <div class="study-img-wt">
-                                <img src="./assets/images/case-study-img-1.jpg" alt="">
-                            </div>
-                            <h3 class="heading-case-wgt">Case Studies: Success Stories and Inspirational Brand Results
-                            </h3>
-                            <div class="read-more-link">
-                                <a href="#" class="btn btn-link-mt">
-                                    READ MORE
-                                    <img src="./assets/images/circle-cross-icon-right.svg" alt="icon" class="ms-3">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="case-study-card">
-                            <div class="study-img-wt">
-                                <img src="./assets/images/case-study-img-1.jpg" alt="">
-                            </div>
-                            <h3 class="heading-case-wgt">Case Studies: Success Stories and Inspirational Brand Results
-                            </h3>
-                            <div class="read-more-link">
-                                <a href="#" class="btn btn-link-mt">
-                                    READ MORE
-                                    <img src="./assets/images/circle-cross-icon-right.svg" alt="icon" class="ms-3">
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </section>
+        
+        
         <section class="pt-80 pb-5">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row align-items-start">
                     <div class="col-12 col-md-5">
-                        <div class="heading-wgt-title pb-5">
+                        <div class="heading-wgt-title">
                             <div class="d-flex align-items-center">
-                                <h2 class="title-h2 extra-text-size text-white">Contact <br><span
-                                        class="text-blue-color">us now!</span>
+                                <h2 class="title-h2 extra-text-size text-white">No one is <br> perfect! 
                                 </h2>
-                                <div class="flex-horn"><img src="./assets/images/horn-img.png" alt="" /></div>
+                                <!-- <div class="flex-horn"><img src="./assets/images/horn-img.png" alt="" /></div> -->
                             </div>
-                            <p>No one is perfect! We would love to hear any suggestions regarding content or further
+                            <p class="mt-4">We would love to hear any suggestions regarding content or further
                                 questions that you might have. Feel free to leave us a comment.</p>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-7">
-                        <div class="contact-form-wgt ps-0 ps-md-5">
+                    <div class="col-12 col-md-6 offset-md-1">
+                        <div class="contact-form-wgt ps-0 ps-md-5 d-none">
                             <form class="action-frm-wap" action="">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
@@ -1082,6 +1216,17 @@
                                 </div>
                             </form>
                         </div>
+                        <div class="profile-container">
+                            <div class="prof-wrap">
+                                <div class="prof-img">
+                                </div>
+                                <h3>Valentine Leroy</h3>
+                                <p>
+                                    Strategic Partnersip Manager
+                                </p>
+                                <p>SMB - TikTok</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1109,9 +1254,23 @@
         $('.menu-btn').click(function(){
             $('.mob-menu').addClass('active');
         })
-        $('.close-btn').click(function(){
+        $('.close-btn, .mob-menu li:not(.has-drop) a').click(function(){
             $('.mob-menu').removeClass('active');
         })
+
+        document.querySelectorAll('.tab-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                // e.preventDefault();
+                
+                // Scroll to the tab section smoothly
+                const targetTabId = this.getAttribute('data-target');
+                const tabButton = document.querySelector(`[data-bs-target="${targetTabId}"]`);
+                if (tabButton) {
+                    const bootstrapTab = new bootstrap.Tab(tabButton);
+                    bootstrapTab.show();
+                }
+            });
+        });
     </script>
 </body>
 

@@ -54,14 +54,25 @@
         cursor: pointer;
     }
 
+    img{
+        position: relative;
+        z-index: 5;
+        pointer-events: none;
+        cursor: pointer;
+    }
+
     select{
         background: transparent;
+        cursor: pointer;
         outline: none;
         border: none;
         box-shadow: none;
         appearance: none;
-        color: white;
+        color: black;
         font-size: 16px;
+        position: absolute;
+        left: 0;
+        top: 0;
     }
 }
 .menu-btn{
@@ -264,5 +275,105 @@
     iframe{
         width: 100%;
         height: 100%;
+    }
+}
+.has-drop{
+    position: relative;
+
+    >a{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img{
+            width: 15px;
+        }
+
+        @media(max-width: 600px){
+            display: flex !important;
+            justify-content: space-between !important;
+        }
+    }
+
+    @media(min-width: 600px){
+
+        &:hover{
+
+            .drop-menu{
+                transform: translateY(0px);
+                pointer-events: unset;
+                opacity: 1;
+            }
+        }
+        
+        .drop-menu{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 250px;
+            padding-top: 1em;
+            transition: 0.2s ease-in-out;
+            transform: translateY(20px);
+            pointer-events: none;
+            opacity: 0;
+    
+    
+            ul{
+                margin-bottom: 0;
+                padding-left: 0;
+                background: rgba($color: #000000, $alpha: 0.8);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0px;
+                border-radius: 16px;
+    
+                li{
+                    width: 100%;
+    
+                    &:not(:last-child){
+                        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.05) !important;
+                    }
+    
+                    a{
+                        padding: 0.75em 1em;
+                        display: inline-block;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+.prof-wrap{
+    position: relative;
+
+    .prof-img{
+        position: relative;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background: rgba($color: #fff, $alpha: 0.05);
+        border: 2px solid #25F4EE;
+        margin-bottom: 20px;
+
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    h3{
+        color: white;
+        margin-bottom: 5px;
+    }
+    p{
+        margin-bottom: 0;
+        color: rgba($color: #fff, $alpha: 0.8);
     }
 }

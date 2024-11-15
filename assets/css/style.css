@@ -50,16 +50,26 @@
   font-size: 16px;
   cursor: pointer;
 }
+.lang-select img {
+  position: relative;
+  z-index: 5;
+  pointer-events: none;
+  cursor: pointer;
+}
 .lang-select select {
   background: transparent;
+  cursor: pointer;
   outline: none;
   border: none;
   box-shadow: none;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  color: white;
+  color: black;
   font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .menu-btn {
@@ -235,4 +245,94 @@
 .image-wgt-contw iframe {
   width: 100%;
   height: 100%;
+}
+
+.has-drop {
+  position: relative;
+}
+.has-drop > a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.has-drop > a img {
+  width: 15px;
+}
+@media (max-width: 600px) {
+  .has-drop > a {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+}
+@media (min-width: 600px) {
+  .has-drop:hover .drop-menu {
+    transform: translateY(0px);
+    pointer-events: unset;
+    opacity: 1;
+  }
+  .has-drop .drop-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 250px;
+    padding-top: 1em;
+    transition: 0.2s ease-in-out;
+    transform: translateY(20px);
+    pointer-events: none;
+    opacity: 0;
+  }
+  .has-drop .drop-menu ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+    border-radius: 16px;
+  }
+  .has-drop .drop-menu ul li {
+    width: 100%;
+  }
+  .has-drop .drop-menu ul li:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  }
+  .has-drop .drop-menu ul li a {
+    padding: 0.75em 1em;
+    display: inline-block;
+    font-size: 16px;
+  }
+}
+
+.prof-wrap {
+  position: relative;
+}
+.prof-wrap .prof-img {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #25F4EE;
+  margin-bottom: 20px;
+}
+.prof-wrap .prof-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.prof-wrap h3 {
+  color: white;
+  margin-bottom: 5px;
+}
+.prof-wrap p {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.8);
 }/*# sourceMappingURL=style.css.map */

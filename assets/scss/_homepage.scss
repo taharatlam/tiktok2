@@ -22,13 +22,13 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: #000;
-    padding: 30px 30px 40px;
+    // padding: 30px 30px 40px;
     height: calc(100% - 30px);
     margin-bottom: 30px;
     margin-left: 20px;
     margin-right: 20px;
-    border: 1px solid #fff;
-    box-shadow: 6px 6px 0px 0px #fff;
+    // border: 1px solid #fff;
+    // box-shadow: 6px 6px 0px 0px #fff;
 }
 
 .title-lvl {
@@ -78,6 +78,12 @@
     border: 1px solid #ffffff5e;
     border-radius: 50px;
     padding: 10px;
+
+    @media(min-width: 600px){
+        margin: 0 auto;
+        max-width: max-content;
+    }
+
     .tabmenu-tik {
         .tablink-btn {
             font-size: 20px;
@@ -223,11 +229,15 @@
 }
 
 .btn-calend {
-    color: #fff;
+    color: #000;
     padding: 8px 15px;
     display: inline-block;
     border-radius: 5px;
     margin-bottom: 15px;
+
+    &:nth-child(2){
+        color: white;
+    }
 
     &.bg-color-dark-blue {
         &:hover {
@@ -276,7 +286,7 @@
 .block-heading {
     span {
         display: inline-block;
-        border: 1px solid $bg-color-primary;
+        // border: 1px solid $bg-color-primary;
         padding: 10px 30px;
         font-size: 28px;
         color: #fff;
