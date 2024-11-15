@@ -307,6 +307,7 @@
 
 .prof-wrap {
   position: relative;
+  text-align: center;
 }
 .prof-wrap .prof-img {
   position: relative;
@@ -315,6 +316,7 @@
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.05);
   border: 2px solid #25F4EE;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 .prof-wrap .prof-img img {
