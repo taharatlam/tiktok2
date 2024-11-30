@@ -228,9 +228,10 @@
 
     h1{
         color: white;
-        font-size: 68px;
+        font-size: 62px;
         margin-bottom: 0;
         font-weight: 700;
+        margin-bottom: 15px;
 
         span{
             color: #25F4EE;
@@ -482,5 +483,16 @@
 
     img{
         width: 100%;
+    }
+}
+.swiper-pagination{
+    position: relative;
+
+    .swiper-pagination-bullet{
+        background: rgba(255,255,255,0.7) !important;
+
+        &.swiper-pagination-bullet-active{
+            background: rgba(255,255,255,1) !important;
+        }
     }
 }

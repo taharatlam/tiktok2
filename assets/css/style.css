@@ -203,9 +203,10 @@
 }
 .banner-con h1 {
   color: white;
-  font-size: 68px;
+  font-size: 62px;
   margin-bottom: 0;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 .banner-con h1 span {
   color: #25F4EE;
@@ -422,4 +423,14 @@
 }
 .tiktok-busi img {
   width: 100%;
+}
+
+.swiper-pagination {
+  position: relative;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.7) !important;
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: rgb(255, 255, 255) !important;
 }/*# sourceMappingURL=style.css.map */
