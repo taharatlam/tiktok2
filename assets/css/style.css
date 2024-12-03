@@ -433,4 +433,11 @@
 }
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: rgb(255, 255, 255) !important;
+}
+
+.main-link {
+  color: white;
+}
+.main-link:hover {
+  color: #e8455a;
 }/*# sourceMappingURL=style.css.map */
